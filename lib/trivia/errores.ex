@@ -1,8 +1,4 @@
 defmodule Trivia.Errores do
-  @moduledoc """
-  Errores propios del juego (sección 10). Como en las guías 06 y 09, cada error es
-  un átomo dentro de {:error, razon}; aquí solo se traduce a un mensaje legible.
-  """
 
   def mensaje(:sin_sesion), do: "Debes iniciar sesión primero: connect <usuario> <clave>."
   def mensaje(:clave_incorrecta), do: "Clave incorrecta."

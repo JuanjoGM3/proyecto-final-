@@ -3,7 +3,6 @@ defmodule Trivia.BancoPreguntasTest do
 
   alias Trivia.{BancoPreguntas, Pregunta}
 
-  # 8 preguntas por nivel en el tema "ciencia"
   defp banco do
     Enum.flat_map([:basico, :intermedio, :avanzado], fn nivel ->
       Enum.map(1..8, fn n ->

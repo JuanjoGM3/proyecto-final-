@@ -1,9 +1,5 @@
 defmodule Trivia.Resultado do
-  @moduledoc """
-  Una línea de results.log (sección 9). Formato:
-  fecha|id|tema|nivel|ganador(es)|jugador=puntos,jugador=puntos
-  Ganadores compartidos separados por ";".
-  """
+
   @enforce_keys [:fecha, :id, :tema, :nivel, :ganadores, :puntajes]
   defstruct [:fecha, :id, :tema, :nivel, :ganadores, :puntajes]
 

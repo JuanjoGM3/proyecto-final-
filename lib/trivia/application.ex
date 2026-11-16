@@ -1,12 +1,5 @@
 defmodule Trivia.Application do
-  @moduledoc """
-  Aplicación OTP (guía 17). El nodo cuyo nombre empieza por "servidor" levanta el
-  árbol de supervisión del servidor; cualquier otro nodo (clientes, mix test) no
-  levanta nada y solo usa Trivia.Cliente.
 
-      iex --sname servidor -S mix    # servidor
-      iex --sname pedro -S mix       # cliente
-  """
   use Application
 
   @impl true

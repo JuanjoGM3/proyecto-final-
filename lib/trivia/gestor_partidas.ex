@@ -4,7 +4,6 @@ defmodule Trivia.GestorPartidas do
 
   alias Trivia.{BancoPreguntas, GestorJugadores, Partida, SupervisorPartidas}
 
-  ## API del cliente
   def start_link(_opts), do: GenServer.start_link(__MODULE__, :ok, name: __MODULE__)
 
   def crear(creador, receptor, tema, total, tiempo),
@@ -15,7 +14,6 @@ defmodule Trivia.GestorPartidas do
   def responder(usuario, letra), do: con_partida(usuario, fn pid -> Partida.responder(pid, usuario, letra) end)
   def salir(usuario), do: con_partida(usuario, fn pid -> Partida.abandonar(pid, usuario) end)
 
-  # cast, no call: la partida los envía desde su init mientras el gestor espera al supervisor
   def reportar(id, pid), do: GenServer.cast(__MODULE__, {:reportar, id, pid})
   def finalizada(id), do: GenServer.cast(__MODULE__, {:finalizada, id})
 
@@ -26,8 +24,6 @@ defmodule Trivia.GestorPartidas do
     end
   end
 
-  ## Callbacks
-  # Estado: %{partidas: %{id => %{pid, receptor, creador}}, por_jugador: %{usuario => id}, contador: n}
   @impl true
   def init(:ok), do: {:ok, %{partidas: %{}, por_jugador: %{}, contador: 1000}}
 

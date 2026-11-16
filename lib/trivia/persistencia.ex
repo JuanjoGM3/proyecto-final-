@@ -1,8 +1,5 @@
 defmodule Trivia.Persistencia do
-  @moduledoc """
-  Único proceso que escribe en disco (sección 7): así las escrituras sobre users.json
-  y results.log no se mezclan. Rutas con Path.join y __DIR__ (guía 11).
-  """
+
   use GenServer
 
   alias Trivia.Resultado
@@ -12,14 +9,12 @@ defmodule Trivia.Persistencia do
   @historial Path.join(@datos, "results.log")
   @preguntas Path.join(@datos, "questions.json")
 
-  ## API del cliente
   def start_link(_opts), do: GenServer.start_link(__MODULE__, :ok, name: __MODULE__)
 
   def usuarios, do: GenServer.call(__MODULE__, :usuarios)
   def registrar_usuario(jugador), do: GenServer.call(__MODULE__, {:registrar, jugador})
   def agregar_resultado(resultado), do: GenServer.call(__MODULE__, {:resultado, resultado})
 
-  @doc "Lista de %Pregunta{} leída de questions.json."
   def cargar_preguntas do
     with {:ok, contenido} <- File.read(@preguntas),
          {:ok, lista} <- Jason.decode(contenido) do
@@ -27,7 +22,6 @@ defmodule Trivia.Persistencia do
     end
   end
 
-  @doc "Stream perezoso de %Resultado{} (guía 10/11)."
   def historial do
     if File.exists?(@historial) do
       @historial
@@ -40,11 +34,9 @@ defmodule Trivia.Persistencia do
     end
   end
 
-  ## Callbacks
   @impl true
   def init(:ok), do: {:ok, leer_usuarios()}
 
-  # El estado es un mapa %{usuario => clave}
   @impl true
   def handle_call(:usuarios, _from, usuarios), do: {:reply, usuarios, usuarios}
 
@@ -59,7 +51,6 @@ defmodule Trivia.Persistencia do
     {:reply, respuesta, usuarios}
   end
 
-  ## Funciones auxiliares
   defp leer_usuarios do
     with {:ok, contenido} <- File.read(@usuarios),
          {:ok, lista} <- Jason.decode(contenido) do

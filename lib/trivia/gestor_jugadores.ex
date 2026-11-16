@@ -1,10 +1,8 @@
 defmodule Trivia.GestorJugadores do
-  @moduledoc "Registro, sesiones, puntajes y ranking. Las estadísticas se calculan desde el historial."
   use GenServer
 
   alias Trivia.{GestorPartidas, Jugador, Nivel, Persistencia}
 
-  ## API del cliente
   def start_link(_opts), do: GenServer.start_link(__MODULE__, :ok, name: __MODULE__)
 
   def conectar(usuario, clave, receptor), do: GenServer.call(__MODULE__, {:conectar, usuario, clave, receptor})
@@ -39,7 +37,6 @@ defmodule Trivia.GestorJugadores do
     }
   end
 
-  # tema = nil -> ranking global. Las entradas de bots se ignoran.
   def ranking_de(entradas, tema) do
     entradas
     |> Enum.filter(fn e -> tema == nil or e.tema == tema end)
@@ -56,8 +53,6 @@ defmodule Trivia.GestorJugadores do
     |> Enum.sort_by(fn fila -> {-fila.puntaje, fila.jugador} end)
   end
 
-  ## Callbacks
-  # Estado: %{pid_receptor => usuario}
   @impl true
   def init(:ok), do: {:ok, %{}}
 
@@ -83,7 +78,6 @@ defmodule Trivia.GestorJugadores do
   def handle_call({:desconectar, receptor}, _from, sesiones),
     do: {:reply, :ok, Map.delete(sesiones, receptor)}
 
-  # El cliente se cerró (guía 16, Process.monitor): se aplica la sección 6.5
   @impl true
   def handle_info({:DOWN, _ref, :process, receptor, _razon}, sesiones) do
     {usuario, restantes} = Map.pop(sesiones, receptor)
@@ -92,12 +86,10 @@ defmodule Trivia.GestorJugadores do
     {:noreply, restantes}
   end
 
-  ## Funciones auxiliares
   defp verificar_sin_sesion(sesiones, usuario) do
     if usuario in Map.values(sesiones), do: {:error, :sesion_duplicada}, else: :ok
   end
 
-  # Si no existe lo registra; si existe, compara la clave
   defp autenticar(jugador) do
     case Map.get(Persistencia.usuarios(), jugador.usuario) do
       nil ->
@@ -107,7 +99,6 @@ defmodule Trivia.GestorJugadores do
       clave when clave == jugador.clave ->
         {:ok, "Bienvenido, #{jugador.usuario}."}
 
-      _otra ->
         {:error, :clave_incorrecta}
     end
   end

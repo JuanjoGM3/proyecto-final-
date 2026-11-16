@@ -1,5 +1,4 @@
 defmodule Trivia.Receptor do
-  @moduledoc "CLIENTE: proceso que recibe las notificaciones de la partida (como ChatClient, guía 16)."
 
   def iniciar, do: spawn(fn -> loop() end)
 

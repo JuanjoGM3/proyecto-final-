@@ -1,9 +1,5 @@
 defmodule Trivia.Partida do
-  @moduledoc """
-  GenServer de una partida (sección 3.3). Un proceso por partida, supervisado
-  con restart: :transient. Los argumentos son los mismos en cada reinicio:
-  %{id, creador, cliente_pid, tema, total, tiempo, nivel}
-  """
+
   use GenServer
 
   alias Trivia.{BancoPreguntas, Bot, GestorPartidas, Persistencia, Pregunta, Puntaje, Resultado}
@@ -12,8 +8,6 @@ defmodule Trivia.Partida do
   @min_bots 2
   @pausa_entre_rondas 3_000
 
-  # jugadores: %{nombre => pid que recibe las notificaciones}
-  # ronda: nil o %{numero, inicio_ms, respuestas: %{jugador => {letra, instante_ms}}}
   defstruct [
     :id,
     :creador,
@@ -30,7 +24,6 @@ defmodule Trivia.Partida do
     ronda: nil
   ]
 
-  ## API del cliente
   def start_link(args), do: GenServer.start_link(__MODULE__, args)
 
   def agregar_bot(pid, dificultad), do: GenServer.call(pid, {:agregar_bot, dificultad})
@@ -38,8 +31,6 @@ defmodule Trivia.Partida do
   def responder(pid, jugador, letra), do: GenServer.call(pid, {:responder, jugador, letra})
   def abandonar(pid, jugador), do: GenServer.call(pid, {:abandonar, jugador})
 
-  ## Validaciones puras (se prueban sin levantar procesos)
-  # Reciben el struct %Partida{} y devuelven :ok o {:error, razon}.
 
   def validar_agregar_bot(%__MODULE__{} = partida) do
     cond do
@@ -66,7 +57,6 @@ defmodule Trivia.Partida do
     end
   end
 
-  ## Callbacks
   @impl true
   def init(args) do
     # cast (nunca call): el gestor está esperando al supervisor y un call lo bloquearía
@@ -135,7 +125,6 @@ defmodule Trivia.Partida do
 
         partida = %{partida | ronda: ronda}
 
-        # Si ya respondieron todos, la ronda cierra sin esperar al temporizador
         partida =
           if map_size(ronda.respuestas) >= map_size(partida.jugadores) do
             cerrar_ronda(partida)
@@ -150,13 +139,11 @@ defmodule Trivia.Partida do
     end
   end
 
-  # Antes de iniciar: solo el creador puede estar, así que la partida se cancela
   def handle_call({:abandonar, _jugador}, _from, %__MODULE__{estado: :esperando} = partida) do
     GestorPartidas.finalizada(partida.id)
     {:stop, :normal, :ok, partida}
   end
 
-  # En curso: termina de inmediato y registra los puntajes obtenidos hasta ahora (6.5)
   def handle_call({:abandonar, _jugador}, _from, partida) do
     finalizar(partida)
     {:stop, :normal, :ok, partida}
@@ -164,7 +151,7 @@ defmodule Trivia.Partida do
 
   @impl true
   def handle_info({:vence, numero_ronda}, partida) do
-    # Si la ronda ya cerró (respondieron todos), este aviso viejo se ignora
+
     if partida.ronda != nil and partida.ronda.numero == numero_ronda do
       {:noreply, cerrar_ronda(partida)}
     else
@@ -185,7 +172,6 @@ defmodule Trivia.Partida do
 
   def handle_info(_otro, partida), do: {:noreply, partida}
 
-  ## Lógica de ronda
 
   defp enviar_pregunta(partida) do
     pregunta = Enum.at(partida.preguntas, partida.pregunta_actual)
@@ -201,7 +187,6 @@ defmodule Trivia.Partida do
       tiempo: partida.tiempo
     }
 
-    # Solo los bots reciben la respuesta correcta (viven en el servidor)
     Enum.each(partida.jugadores, fn {nombre, pid} ->
       if bot?(nombre) do
         send(pid, {:pregunta, info, pregunta.respuesta})
@@ -231,7 +216,6 @@ defmodule Trivia.Partida do
             {_letra, _instante} -> :incorrecta
           end
 
-        # Segundos restantes con decimales: Puntaje.bonificacion hace trunc al final
         restantes =
           case respuesta do
             {_letra, instante} ->
@@ -260,7 +244,6 @@ defmodule Trivia.Partida do
 
     Enum.each(partida.jugadores, fn {_nombre, pid} -> send(pid, {:fin_ronda, resumen}) end)
 
-    # Después de la última ronda no hace falta esperar: se muestra el ranking ya
     if partida.pregunta_actual + 1 >= length(partida.preguntas) do
       send(self(), :siguiente_ronda)
     else
@@ -270,8 +253,6 @@ defmodule Trivia.Partida do
     %{partida | ronda: nil, puntajes: nuevos_puntajes}
   end
 
-  # Persiste el resultado y envía el ranking final a los humanos.
-  # Sirve tanto para el final normal como para el abandono (secciones 6.5 y 7).
   defp finalizar(partida) do
     maximo = partida.puntajes |> Map.values() |> Enum.max()
 

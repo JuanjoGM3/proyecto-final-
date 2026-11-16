@@ -1,5 +1,5 @@
 defmodule Trivia.BancoPreguntas do
-  @moduledoc "Carga el banco al arrancar y sortea preguntas por tema y nivel."
+
   use GenServer
 
   alias Trivia.{Nivel, Persistencia}
@@ -26,7 +26,6 @@ defmodule Trivia.BancoPreguntas do
     end
   end
 
-  @doc "Sortea sin repetir y ordena de menor a mayor nivel."
   def sortear_en(preguntas, tema, total, nivel) do
     del_tema = Enum.filter(preguntas, fn p -> p.tema == tema end)
     reparto = Nivel.reparto(nivel, total)

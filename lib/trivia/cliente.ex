@@ -1,5 +1,5 @@
 defmodule Trivia.Cliente do
-  @moduledoc "CLIENTE: lee comandos, los envía al servidor y muestra la respuesta. Sin lógica de juego."
+
 
   alias Trivia.{Errores, Receptor}
 
@@ -17,7 +17,6 @@ defmodule Trivia.Cliente do
     end
   end
 
-  # El teclado se lee aquí; las notificaciones las recibe el proceso Receptor
   defp loop(nodo, receptor) do
     case leer() |> parsear() do
       :salir ->
@@ -38,7 +37,6 @@ defmodule Trivia.Cliente do
     end
   end
 
-  # Si se cierra la entrada (Ctrl+D), se trata como "exit"
   defp leer do
     case IO.gets("> ") do
       linea when is_binary(linea) -> String.split(linea)
@@ -46,7 +44,6 @@ defmodule Trivia.Cliente do
     end
   end
 
-  # Mismo patrón de la guía 15: GenServer.call a {NombreDelServidor, nodo}
   defp pedir(nodo, receptor, comando) do
     GenServer.call({Trivia.Servidor, nodo}, {:peticion, receptor, comando}, @timeout)
   catch
@@ -58,7 +55,6 @@ defmodule Trivia.Cliente do
   defp mostrar(:ok), do: :ok
   defp mostrar({:error, razon}), do: IO.puts(:standard_error, "Error: #{Errores.mensaje(razon)}")
 
-  ## Parseo de comandos
   defp parsear(["connect", usuario, clave]), do: {:ok, {:connect, usuario, clave}}
   defp parsear(["disconnect"]), do: :salir
   defp parsear(["exit"]), do: :salir
@@ -84,11 +80,6 @@ defmodule Trivia.Cliente do
   defp parsear(_otro), do: {:error, :comando_desconocido}
 
   defp ayuda do
-    """
-    connect <usuario> <clave> | disconnect | exit
-    create_game tema=<tema> preguntas=<n> tiempo=<segundos>
-    add_bot <facil|dificil> | start_game | leave_game | answer <A|B|C|D>
-    score | ranking [tema]
-    """
+
   end
 end

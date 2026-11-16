@@ -1,9 +1,5 @@
 defmodule Trivia.Servidor do
-  @moduledoc """
-  Recibe las peticiones de los clientes y las enruta. Se registra con su nombre de
-  módulo (como Carritos en la guía 15): el cliente lo ubica con {Trivia.Servidor, nodo}.
-  Petición: {:peticion, pid_receptor_del_cliente, comando}
-  """
+
   use GenServer
 
   alias Trivia.{GestorJugadores, GestorPartidas}
