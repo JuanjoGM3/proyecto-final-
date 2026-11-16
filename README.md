@@ -1,30 +1,68 @@
-# Trivia Concurrente
+Compilar y probar
 
-Proyecto Mix (guía 17). Servidor y clientes son nodos distintos: el rol lo decide el
-nombre del nodo. Si empieza por `servidor`, se levanta el árbol de supervisión del juego;
-cualquier otro nodo es un cliente y no levanta nada.
+Desde la carpeta que contiene `mix.exs`:
 
-## Ejecutar (desde la carpeta que contiene mix.exs)
+```
+mix deps.get
+mix compile
+mix test
+```
 
-    mix deps.get
-    mix test
+Levantar el servidor y los clientes
 
-    # Consola 1: servidor
-    iex --sname servidor -S mix
+Cada uno en su propia consola:
 
-    # Consola 2: cliente (el nombre de la máquina sale en el prompt del servidor)
-    iex --sname pedro -S mix
-    iex> Trivia.Cliente.iniciar("servidor@NOMBRE_DE_LA_MAQUINA")
+```
+# Consola 1: servidor
+iex --sname servidor -S mix
 
-## Formato de results.log
+# Consola 2: cliente de Pedro
+iex --sname pedro -S mix
 
-    fecha|id|tema|nivel|ganador(es)|jugador=puntos,jugador=puntos
+# Consola 3: cliente de Carlos
+iex --sname carlos -S mix
+```
 
-## Notificaciones de la partida a los receptores
+El nombre del servidor debe empezar por `servidor`. Los clientes no.
 
-    {:pregunta, info}              # jugadores humanos
-    {:pregunta, info, correcta}    # bots (el cliente nunca recibe la correcta)
-    {:fin_ronda, resumen}
-    {:ranking_final, ranking}
-    {:aviso, texto}
+## Conectar un cliente
 
+En la consola del cliente, con el nombre completo del servidor (aparece en su prompt, por ejemplo `servidor@mi-maquina`):
+
+```
+iex> Trivia.Cliente.iniciar("servidor@mi-maquina")
+> connect pedro 1234
+```
+
+Comandos del juego
+
+| Comando | Qué hace |
+|---|---|
+| `connect <usuario> <clave>` | Inicia sesión; si el usuario no existe, lo registra. |
+| `disconnect` | Cierra la sesión y sale del cliente. |
+| `score` | Puntaje acumulado, partidas jugadas y nivel por tema. |
+| `ranking` | Ranking histórico global. |
+| `ranking <tema>` | Ranking histórico de un tema. |
+| `create_game tema=<tema> preguntas=<n> tiempo=<segundos>` | Crea una partida. |
+| `add_bot facil` / `add_bot dificil` | Agrega un bot a la partida. |
+| `start_game` | Inicia la partida (necesita 2 bots como mínimo). |
+| `answer A` / `B` / `C` / `D` | Responde la pregunta en curso. |
+| `leave_game` | Abandona la partida. |
+| `help` | Muestra los comandos. |
+| `exit` | Igual que `disconnect`. |
+
+Temas disponibles: `ciencia`, `historia`, `geografia`, `deportes`.
+
+Ejemplo
+
+```
+> connect pedro 1234
+> create_game tema=ciencia preguntas=5 tiempo=15
+> add_bot dificil
+> add_bot facil
+> start_game
+> answer B
+> score
+> ranking ciencia
+> exit
+```
