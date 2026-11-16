@@ -1,0 +1,25 @@
+defmodule Trivia.Errores do
+  @moduledoc """
+  Errores propios del juego (sección 10). Como en las guías 06 y 09, cada error es
+  un átomo dentro de {:error, razon}; aquí solo se traduce a un mensaje legible.
+  """
+
+  def mensaje(:sin_sesion), do: "Debes iniciar sesión primero: connect <usuario> <clave>."
+  def mensaje(:clave_incorrecta), do: "Clave incorrecta."
+  def mensaje(:sesion_duplicada), do: "Ese usuario ya tiene una sesión abierta en otro cliente."
+  def mensaje(:usuario_reservado), do: "El prefijo bot_ está reservado para jugadores automáticos."
+  def mensaje(:usuario_invalido), do: "El usuario no puede estar vacío ni tener espacios."
+  def mensaje(:servidor_no_disponible), do: "El servidor no está disponible."
+  def mensaje(:ya_en_partida), do: "Ya estás en una partida."
+  def mensaje(:tema_inexistente), do: "El tema no existe en el banco de preguntas."
+  def mensaje(:preguntas_insuficientes), do: "El tema no tiene suficientes preguntas de algún nivel."
+  def mensaje(:sin_partida), do: "No estás en ninguna partida."
+  def mensaje(:partida_llena), do: "La partida ya tiene 4 jugadores."
+  def mensaje(:partida_iniciada), do: "La partida ya fue iniciada."
+  def mensaje(:bots_insuficientes), do: "Se necesitan al menos 2 bots para iniciar."
+  def mensaje(:respuesta_invalida), do: "Respuesta inválida: usa A, B, C o D."
+  def mensaje(:sin_ronda_abierta), do: "No hay una ronda abierta."
+  def mensaje(:ya_respondio), do: "Ya respondiste esta ronda; la respuesta se ignora."
+  def mensaje(:comando_desconocido), do: "Comando desconocido. Escribe help."
+  def mensaje(otro), do: "Error: #{inspect(otro)}"
+end

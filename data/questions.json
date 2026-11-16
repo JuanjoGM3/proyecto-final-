@@ -1,0 +1,1154 @@
+[
+  {
+    "tema": "ciencia",
+    "nivel": "basico",
+    "enunciado": "¿Cuál es el planeta más grande del sistema solar?",
+    "opciones": {
+      "A": "Marte",
+      "B": "Júpiter",
+      "C": "Saturno",
+      "D": "Neptuno"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "basico",
+    "enunciado": "¿Qué gas absorben las plantas durante la fotosíntesis?",
+    "opciones": {
+      "A": "Oxígeno",
+      "B": "Nitrógeno",
+      "C": "Dióxido de carbono",
+      "D": "Helio"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "basico",
+    "enunciado": "¿Cuántos huesos tiene aproximadamente el cuerpo humano adulto?",
+    "opciones": {
+      "A": "106",
+      "B": "206",
+      "C": "306",
+      "D": "156"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "basico",
+    "enunciado": "¿Cuál es el símbolo químico del agua?",
+    "opciones": {
+      "A": "O2",
+      "B": "CO2",
+      "C": "H2O",
+      "D": "NaCl"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "basico",
+    "enunciado": "¿Qué planeta es conocido como el planeta rojo?",
+    "opciones": {
+      "A": "Venus",
+      "B": "Marte",
+      "C": "Mercurio",
+      "D": "Júpiter"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "basico",
+    "enunciado": "¿Cuál es el satélite natural de la Tierra?",
+    "opciones": {
+      "A": "Fobos",
+      "B": "Europa",
+      "C": "La Luna",
+      "D": "Titán"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "basico",
+    "enunciado": "¿Qué órgano bombea la sangre en el cuerpo humano?",
+    "opciones": {
+      "A": "Hígado",
+      "B": "Pulmón",
+      "C": "Riñón",
+      "D": "Corazón"
+    },
+    "respuesta": "D"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "basico",
+    "enunciado": "¿A qué temperatura hierve el agua a nivel del mar?",
+    "opciones": {
+      "A": "50 °C",
+      "B": "100 °C",
+      "C": "150 °C",
+      "D": "0 °C"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuál es la velocidad de la luz aproximadamente?",
+    "opciones": {
+      "A": "300.000 km/s",
+      "B": "150.000 km/s",
+      "C": "30.000 km/s",
+      "D": "3.000 km/s"
+    },
+    "respuesta": "A"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "intermedio",
+    "enunciado": "¿Quién formuló la teoría de la relatividad?",
+    "opciones": {
+      "A": "Newton",
+      "B": "Einstein",
+      "C": "Galileo",
+      "D": "Darwin"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuál es el elemento más abundante en el universo?",
+    "opciones": {
+      "A": "Oxígeno",
+      "B": "Carbono",
+      "C": "Hidrógeno",
+      "D": "Helio"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "intermedio",
+    "enunciado": "¿Qué tipo de animal es una ballena?",
+    "opciones": {
+      "A": "Pez",
+      "B": "Mamífero",
+      "C": "Reptil",
+      "D": "Anfibio"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuál es la unidad de medida de la fuerza en el Sistema Internacional?",
+    "opciones": {
+      "A": "Joule",
+      "B": "Watt",
+      "C": "Newton",
+      "D": "Pascal"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "intermedio",
+    "enunciado": "¿Qué partícula tiene carga negativa en el átomo?",
+    "opciones": {
+      "A": "Protón",
+      "B": "Neutrón",
+      "C": "Electrón",
+      "D": "Fotón"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuántos cromosomas tiene normalmente una célula humana?",
+    "opciones": {
+      "A": "23",
+      "B": "46",
+      "C": "48",
+      "D": "32"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "intermedio",
+    "enunciado": "¿Qué gas es el principal componente de la atmósfera terrestre?",
+    "opciones": {
+      "A": "Oxígeno",
+      "B": "Dióxido de carbono",
+      "C": "Nitrógeno",
+      "D": "Argón"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "avanzado",
+    "enunciado": "¿Qué partícula mediadora de la fuerza electromagnética?",
+    "opciones": {
+      "A": "Gluón",
+      "B": "Fotón",
+      "C": "Bosón W",
+      "D": "Gravitón"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "avanzado",
+    "enunciado": "¿Cuál es el número atómico del carbono?",
+    "opciones": {
+      "A": "6",
+      "B": "8",
+      "C": "12",
+      "D": "14"
+    },
+    "respuesta": "A"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "avanzado",
+    "enunciado": "¿Qué ley establece que la energía no se crea ni se destruye?",
+    "opciones": {
+      "A": "Ley de Ohm",
+      "B": "Primera ley de la termodinámica",
+      "C": "Ley de Coulomb",
+      "D": "Ley de Boyle"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "avanzado",
+    "enunciado": "¿Cuál es la fórmula química del ozono?",
+    "opciones": {
+      "A": "O2",
+      "B": "O3",
+      "C": "CO2",
+      "D": "H2O2"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "avanzado",
+    "enunciado": "¿Qué científico propuso el modelo heliocéntrico del sistema solar?",
+    "opciones": {
+      "A": "Ptolomeo",
+      "B": "Galileo",
+      "C": "Copérnico",
+      "D": "Kepler"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "avanzado",
+    "enunciado": "¿Cuál es la constante de Avogadro aproximadamente?",
+    "opciones": {
+      "A": "6,02 × 10^23",
+      "B": "3,00 × 10^8",
+      "C": "9,8",
+      "D": "1,6 × 10^-19"
+    },
+    "respuesta": "A"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "avanzado",
+    "enunciado": "¿Qué tipo de enlace une los átomos de sodio y cloro en la sal de mesa?",
+    "opciones": {
+      "A": "Covalente",
+      "B": "Iónico",
+      "C": "Metálico",
+      "D": "De hidrógeno"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "ciencia",
+    "nivel": "avanzado",
+    "enunciado": "¿En qué organelo celular ocurre la respiración celular en eucariotas?",
+    "opciones": {
+      "A": "Núcleo",
+      "B": "Ribosoma",
+      "C": "Mitocondria",
+      "D": "Cloroplasto"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "historia",
+    "nivel": "basico",
+    "enunciado": "¿En qué año llegó Cristóbal Colón a América?",
+    "opciones": {
+      "A": "1492",
+      "B": "1500",
+      "C": "1485",
+      "D": "1510"
+    },
+    "respuesta": "A"
+  },
+  {
+    "tema": "historia",
+    "nivel": "basico",
+    "enunciado": "¿Quién fue el primer presidente de Estados Unidos?",
+    "opciones": {
+      "A": "Abraham Lincoln",
+      "B": "George Washington",
+      "C": "Thomas Jefferson",
+      "D": "John Adams"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "historia",
+    "nivel": "basico",
+    "enunciado": "¿En qué continente nació la civilización egipcia?",
+    "opciones": {
+      "A": "Asia",
+      "B": "Europa",
+      "C": "África",
+      "D": "América"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "historia",
+    "nivel": "basico",
+    "enunciado": "¿Quién pintó la Mona Lisa?",
+    "opciones": {
+      "A": "Miguel Ángel",
+      "B": "Rafael",
+      "C": "Leonardo da Vinci",
+      "D": "Donatello"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "historia",
+    "nivel": "basico",
+    "enunciado": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "opciones": {
+      "A": "1912",
+      "B": "1914",
+      "C": "1916",
+      "D": "1918"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "historia",
+    "nivel": "basico",
+    "enunciado": "¿Quién fue el libertador de varios países de América del Sur?",
+    "opciones": {
+      "A": "San Martín",
+      "B": "Bolívar",
+      "C": "Hidalgo",
+      "D": "Morelos"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "historia",
+    "nivel": "basico",
+    "enunciado": "¿En qué ciudad se firmó la Declaración de Independencia de Estados Unidos?",
+    "opciones": {
+      "A": "Nueva York",
+      "B": "Boston",
+      "C": "Filadelfia",
+      "D": "Washington"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "historia",
+    "nivel": "basico",
+    "enunciado": "¿Qué imperio construyó la Gran Muralla China?",
+    "opciones": {
+      "A": "Mongol",
+      "B": "Chino",
+      "C": "Japonés",
+      "D": "Persa"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "historia",
+    "nivel": "intermedio",
+    "enunciado": "¿En qué año terminó la Segunda Guerra Mundial?",
+    "opciones": {
+      "A": "1943",
+      "B": "1945",
+      "C": "1947",
+      "D": "1939"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "historia",
+    "nivel": "intermedio",
+    "enunciado": "¿Quién fue el líder de la Revolución Rusa de 1917?",
+    "opciones": {
+      "A": "Stalin",
+      "B": "Lenin",
+      "C": "Trotsky",
+      "D": "Marx"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "historia",
+    "nivel": "intermedio",
+    "enunciado": "¿En qué año cayó el Muro de Berlín?",
+    "opciones": {
+      "A": "1985",
+      "B": "1987",
+      "C": "1989",
+      "D": "1991"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "historia",
+    "nivel": "intermedio",
+    "enunciado": "¿Quién fue el faraón más conocido del antiguo Egipto por su tumba intacta?",
+    "opciones": {
+      "A": "Ramsés II",
+      "B": "Tutankamón",
+      "C": "Cleopatra",
+      "D": "Akenatón"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "historia",
+    "nivel": "intermedio",
+    "enunciado": "¿Qué tratado puso fin a la Primera Guerra Mundial?",
+    "opciones": {
+      "A": "Tratado de Versalles",
+      "B": "Tratado de París",
+      "C": "Tratado de Tordesillas",
+      "D": "Tratado de Utrecht"
+    },
+    "respuesta": "A"
+  },
+  {
+    "tema": "historia",
+    "nivel": "intermedio",
+    "enunciado": "¿En qué año se independizó Colombia de España (Batalla de Boyacá)?",
+    "opciones": {
+      "A": "1810",
+      "B": "1819",
+      "C": "1821",
+      "D": "1830"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "historia",
+    "nivel": "intermedio",
+    "enunciado": "¿Quién escribió 'El Príncipe'?",
+    "opciones": {
+      "A": "Platón",
+      "B": "Aristóteles",
+      "C": "Maquiavelo",
+      "D": "Sócrates"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "historia",
+    "nivel": "intermedio",
+    "enunciado": "¿Qué civilización construyó Machu Picchu?",
+    "opciones": {
+      "A": "Azteca",
+      "B": "Maya",
+      "C": "Inca",
+      "D": "Olmeca"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "historia",
+    "nivel": "avanzado",
+    "enunciado": "¿En qué batalla derrotó Napoleón a los austriacos y rusos en 1805?",
+    "opciones": {
+      "A": "Waterloo",
+      "B": "Austerlitz",
+      "C": "Trafalgar",
+      "D": "Borodinó"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "historia",
+    "nivel": "avanzado",
+    "enunciado": "¿Quién fue el último emperador del Sacro Imperio Romano Germánico?",
+    "opciones": {
+      "A": "Carlos V",
+      "B": "Francisco II",
+      "C": "Maximiliano I",
+      "D": "José II"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "historia",
+    "nivel": "avanzado",
+    "enunciado": "¿En qué año se firmó la Carta Magna inglesa?",
+    "opciones": {
+      "A": "1066",
+      "B": "1215",
+      "C": "1492",
+      "D": "1689"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "historia",
+    "nivel": "avanzado",
+    "enunciado": "¿Qué dinastía gobernó China durante la construcción de gran parte de la Gran Muralla que se conserva?",
+    "opciones": {
+      "A": "Han",
+      "B": "Tang",
+      "C": "Ming",
+      "D": "Qing"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "historia",
+    "nivel": "avanzado",
+    "enunciado": "¿Quién lideró la unificación de Italia en el siglo XIX?",
+    "opciones": {
+      "A": "Garibaldi",
+      "B": "Cavour",
+      "C": "Mazzini",
+      "D": "Víctor Manuel II"
+    },
+    "respuesta": "A"
+  },
+  {
+    "tema": "historia",
+    "nivel": "avanzado",
+    "enunciado": "¿En qué batalla naval fue derrotada la Armada Invencible española?",
+    "opciones": {
+      "A": "Lepanto",
+      "B": "Trafalgar",
+      "C": "Canal de la Mancha (1588)",
+      "D": "Jutlandia"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "historia",
+    "nivel": "avanzado",
+    "enunciado": "¿Qué emperador romano adoptó el cristianismo como religión del imperio?",
+    "opciones": {
+      "A": "Nerón",
+      "B": "Augusto",
+      "C": "Constantino",
+      "D": "Diocleciano"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "historia",
+    "nivel": "avanzado",
+    "enunciado": "¿En qué año ocurrió la Revolución Francesa?",
+    "opciones": {
+      "A": "1776",
+      "B": "1789",
+      "C": "1815",
+      "D": "1848"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "basico",
+    "enunciado": "¿Cuál es la capital de Francia?",
+    "opciones": {
+      "A": "Lyon",
+      "B": "Marsella",
+      "C": "París",
+      "D": "Niza"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "basico",
+    "enunciado": "¿Cuál es el río más largo del mundo?",
+    "opciones": {
+      "A": "Nilo",
+      "B": "Amazonas",
+      "C": "Yangtsé",
+      "D": "Misisipi"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "basico",
+    "enunciado": "¿En qué continente está Brasil?",
+    "opciones": {
+      "A": "África",
+      "B": "Europa",
+      "C": "América",
+      "D": "Asia"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "basico",
+    "enunciado": "¿Cuál es el océano más grande?",
+    "opciones": {
+      "A": "Atlántico",
+      "B": "Índico",
+      "C": "Ártico",
+      "D": "Pacífico"
+    },
+    "respuesta": "D"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "basico",
+    "enunciado": "¿Cuál es la capital de Colombia?",
+    "opciones": {
+      "A": "Medellín",
+      "B": "Cali",
+      "C": "Bogotá",
+      "D": "Cartagena"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "basico",
+    "enunciado": "¿Cuál es el país más grande del mundo por superficie?",
+    "opciones": {
+      "A": "China",
+      "B": "Canadá",
+      "C": "Estados Unidos",
+      "D": "Rusia"
+    },
+    "respuesta": "D"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "basico",
+    "enunciado": "¿En qué continente se encuentra el desierto del Sahara?",
+    "opciones": {
+      "A": "Asia",
+      "B": "África",
+      "C": "América",
+      "D": "Australia"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "basico",
+    "enunciado": "¿Cuál es la capital de Japón?",
+    "opciones": {
+      "A": "Osaka",
+      "B": "Kioto",
+      "C": "Tokio",
+      "D": "Hiroshima"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuál es la capital de Australia?",
+    "opciones": {
+      "A": "Sídney",
+      "B": "Melbourne",
+      "C": "Canberra",
+      "D": "Brisbane"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "intermedio",
+    "enunciado": "¿Qué país tiene forma de bota?",
+    "opciones": {
+      "A": "España",
+      "B": "Italia",
+      "C": "Grecia",
+      "D": "Portugal"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuál es el lago más profundo del mundo?",
+    "opciones": {
+      "A": "Lago Superior",
+      "B": "Lago Victoria",
+      "C": "Lago Baikal",
+      "D": "Lago Titicaca"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "intermedio",
+    "enunciado": "¿En qué país se encuentra el monte Everest?",
+    "opciones": {
+      "A": "India",
+      "B": "China y Nepal",
+      "C": "Pakistán",
+      "D": "Bután"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuál es el estrecho que separa América de Asia?",
+    "opciones": {
+      "A": "Estrecho de Gibraltar",
+      "B": "Estrecho de Magallanes",
+      "C": "Estrecho de Bering",
+      "D": "Estrecho de Malaca"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuál es la capital de Canadá?",
+    "opciones": {
+      "A": "Toronto",
+      "B": "Vancouver",
+      "C": "Montreal",
+      "D": "Ottawa"
+    },
+    "respuesta": "D"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "intermedio",
+    "enunciado": "¿Qué cordillera recorre el oeste de América del Sur?",
+    "opciones": {
+      "A": "Rocosas",
+      "B": "Andes",
+      "C": "Alpes",
+      "D": "Himalaya"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuál es el país sin costa más grande del mundo?",
+    "opciones": {
+      "A": "Mongolia",
+      "B": "Kazajistán",
+      "C": "Afganistán",
+      "D": "Bolivia"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "avanzado",
+    "enunciado": "¿Cuál es el desierto más grande del mundo (no polar)?",
+    "opciones": {
+      "A": "Gobi",
+      "B": "Sahara",
+      "C": "Kalahari",
+      "D": "Atacama"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "avanzado",
+    "enunciado": "¿Cuál es el punto más bajo de la superficie terrestre (emergida)?",
+    "opciones": {
+      "A": "Valle de la Muerte",
+      "B": "Mar Muerto",
+      "C": "Depresión de Qattara",
+      "D": "Lago Assal"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "avanzado",
+    "enunciado": "¿En qué océano se encuentra la Fosa de las Marianas?",
+    "opciones": {
+      "A": "Atlántico",
+      "B": "Índico",
+      "C": "Pacífico",
+      "D": "Ártico"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "avanzado",
+    "enunciado": "¿Cuál es el río más caudaloso del mundo?",
+    "opciones": {
+      "A": "Nilo",
+      "B": "Congo",
+      "C": "Amazonas",
+      "D": "Yangtsé"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "avanzado",
+    "enunciado": "¿Qué país tiene la mayor cantidad de lagos naturales?",
+    "opciones": {
+      "A": "Rusia",
+      "B": "Canadá",
+      "C": "Finlandia",
+      "D": "Estados Unidos"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "avanzado",
+    "enunciado": "¿Cuál es la capital de Kazajistán?",
+    "opciones": {
+      "A": "Almatý",
+      "B": "Astaná",
+      "C": "Shymkent",
+      "D": "Karagandá"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "avanzado",
+    "enunciado": "¿Qué archipiélago forma el país de Indonesia principalmente?",
+    "opciones": {
+      "A": "Antillas",
+      "B": "Malayo",
+      "C": "Polinesio",
+      "D": "Micronesio"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "geografia",
+    "nivel": "avanzado",
+    "enunciado": "¿Cuál es el volcán activo más alto del mundo?",
+    "opciones": {
+      "A": "Etna",
+      "B": "Kilimanjaro",
+      "C": "Ojos del Salado",
+      "D": "Mauna Loa"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "basico",
+    "enunciado": "¿Cuántos jugadores tiene un equipo de fútbol en el campo?",
+    "opciones": {
+      "A": "9",
+      "B": "10",
+      "C": "11",
+      "D": "12"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "basico",
+    "enunciado": "¿En qué deporte se usa una raqueta y una pelota amarilla?",
+    "opciones": {
+      "A": "Bádminton",
+      "B": "Tenis",
+      "C": "Squash",
+      "D": "Ping-pong"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "basico",
+    "enunciado": "¿Cada cuántos años se celebran los Juegos Olímpicos de verano?",
+    "opciones": {
+      "A": "2 años",
+      "B": "3 años",
+      "C": "4 años",
+      "D": "5 años"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "basico",
+    "enunciado": "¿Cuántos sets se necesitan para ganar un partido de tenis masculino en Grand Slam?",
+    "opciones": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "basico",
+    "enunciado": "¿En qué deporte se anota un 'touchdown'?",
+    "opciones": {
+      "A": "Rugby",
+      "B": "Fútbol americano",
+      "C": "Baloncesto",
+      "D": "Hockey"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "basico",
+    "enunciado": "¿Cuántos aros tiene el símbolo olímpico?",
+    "opciones": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "basico",
+    "enunciado": "¿Qué país ganó el Mundial de Fútbol 2018?",
+    "opciones": {
+      "A": "Brasil",
+      "B": "Alemania",
+      "C": "Francia",
+      "D": "Croacia"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "basico",
+    "enunciado": "¿En qué deporte se usa un 'bate'?",
+    "opciones": {
+      "A": "Golf",
+      "B": "Cricket / Béisbol",
+      "C": "Hockey",
+      "D": "Polo"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuántos jugadores forman un equipo de baloncesto en cancha?",
+    "opciones": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "intermedio",
+    "enunciado": "¿Quién es conocido como 'La Pulga' en el fútbol?",
+    "opciones": {
+      "A": "Cristiano Ronaldo",
+      "B": "Neymar",
+      "C": "Lionel Messi",
+      "D": "Ronaldinho"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "intermedio",
+    "enunciado": "¿En qué ciudad se celebraron los Juegos Olímpicos de 2016?",
+    "opciones": {
+      "A": "Londres",
+      "B": "Tokio",
+      "C": "Río de Janeiro",
+      "D": "Pekín"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuántos Grand Slam de tenis existen al año?",
+    "opciones": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "intermedio",
+    "enunciado": "¿Qué nadador posee el récord de más medallas olímpicas?",
+    "opciones": {
+      "A": "Mark Spitz",
+      "B": "Michael Phelps",
+      "C": "Ian Thorpe",
+      "D": "Ryan Lochte"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "intermedio",
+    "enunciado": "¿En qué deporte se disputa la Champions League?",
+    "opciones": {
+      "A": "Baloncesto",
+      "B": "Fútbol",
+      "C": "Voleibol",
+      "D": "Balonmano"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "intermedio",
+    "enunciado": "¿Cuánto dura un tiempo reglamentario de un partido de fútbol?",
+    "opciones": {
+      "A": "40 minutos",
+      "B": "45 minutos",
+      "C": "50 minutos",
+      "D": "60 minutos"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "intermedio",
+    "enunciado": "¿Qué país ha ganado más Mundiales de Fútbol?",
+    "opciones": {
+      "A": "Alemania",
+      "B": "Italia",
+      "C": "Argentina",
+      "D": "Brasil"
+    },
+    "respuesta": "D"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "avanzado",
+    "enunciado": "¿En qué año se celebró el primer Mundial de Fútbol?",
+    "opciones": {
+      "A": "1924",
+      "B": "1930",
+      "C": "1934",
+      "D": "1950"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "avanzado",
+    "enunciado": "¿Quién tiene el récord de más títulos de Grand Slam en individuales masculinos?",
+    "opciones": {
+      "A": "Roger Federer",
+      "B": "Rafael Nadal",
+      "C": "Novak Djokovic",
+      "D": "Pete Sampras"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "avanzado",
+    "enunciado": "¿Cuántos jugadores hay por equipo en un partido de rugby union?",
+    "opciones": {
+      "A": "11",
+      "B": "13",
+      "C": "15",
+      "D": "18"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "avanzado",
+    "enunciado": "¿En qué ciudad se originó el maratón moderno de los Juegos Olímpicos?",
+    "opciones": {
+      "A": "Roma",
+      "B": "Atenas",
+      "C": "Londres",
+      "D": "París"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "avanzado",
+    "enunciado": "¿Qué piloto de Fórmula 1 tiene más campeonatos del mundo?",
+    "opciones": {
+      "A": "Ayrton Senna",
+      "B": "Michael Schumacher",
+      "C": "Lewis Hamilton",
+      "D": "Juan Manuel Fangio"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "avanzado",
+    "enunciado": "¿Cuántos puntos vale un try en rugby union?",
+    "opciones": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "7"
+    },
+    "respuesta": "C"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "avanzado",
+    "enunciado": "¿En qué deporte se usa el término 'birdie'?",
+    "opciones": {
+      "A": "Tenis",
+      "B": "Golf",
+      "C": "Bádminton",
+      "D": "Cricket"
+    },
+    "respuesta": "B"
+  },
+  {
+    "tema": "deportes",
+    "nivel": "avanzado",
+    "enunciado": "¿Qué equipo de la NBA tiene más campeonatos históricos?",
+    "opciones": {
+      "A": "Los Angeles Lakers",
+      "B": "Chicago Bulls",
+      "C": "Boston Celtics",
+      "D": "Golden State Warriors"
+    },
+    "respuesta": "C"
+  }
+]
